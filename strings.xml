@@ -1,0 +1,9 @@
+<resources>
+<string name="app_name">Blue Calm</string>
+
+<string-array name="minutes">
+    <item>5 min</item>
+    <item>10 min</item>
+    <item>20 min</item>
+</string-array>
+</resources>
