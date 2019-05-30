@@ -14,16 +14,16 @@ public class MainActivity extends AppCompatActivity {
 
         /**code for spinner number one
         *Written by Whitney Chase*/
-        Spinner mySpinner = (Spinner) findViewById(R.id.spinner1);
+        Spinner mySpinner = (Spinner) findViewById(R.id.whiteNoise);
 
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MainActivity.this,
                 android.R.layout.simple_expandable_list_item_1, getResources().getStringArray(R.array.minutes));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mySpinner.setAdapter(myAdapter);
 
-        /**code for spinner number two
+      /**code for spinner number two
         *Written by Whitney Chase*/
-        Spinner mySpinner2 = (Spinner) findViewById(R.id.spinner2);
+      Spinner mySpinner2 = (Spinner) findViewById(R.id.intramental);
 
         ArrayAdapter<String> myAdapter2 = new ArrayAdapter<String>(MainActivity.this,
                 android.R.layout.simple_expandable_list_item_1, getResources().getStringArray(R.array.minutes));
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         /**code for spinner number third
         *Written by Whitney Chase*/
-        Spinner mySpinner3 = (Spinner) findViewById(R.id.spinner2);
+        Spinner mySpinner3 = (Spinner) findViewById(R.id.water);
 
         ArrayAdapter<String> myAdapter3 = new ArrayAdapter<String>(MainActivity.this,
                 android.R.layout.simple_expandable_list_item_1, getResources().getStringArray(R.array.minutes));
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         /**code for spinner number fourth
         *Written by Whitney Chase*/
-        Spinner mySpinner4 = (Spinner) findViewById(R.id.spinner2);
+        Spinner mySpinner4 = (Spinner) findViewById(R.id.nature);
 
         ArrayAdapter<String> myAdapter4 = new ArrayAdapter<String>(MainActivity.this,
                 android.R.layout.simple_expandable_list_item_1, getResources().getStringArray(R.array.minutes));
