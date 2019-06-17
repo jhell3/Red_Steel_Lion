@@ -57,5 +57,3 @@ public class Music_Time_Selection extends AppCompatActivity {
     }
 
 }
-
-}
