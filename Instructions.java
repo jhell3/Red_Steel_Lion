@@ -44,4 +44,12 @@ public class Instructions extends AppCompatActivity {
         super.onDestroy();
         if (song != null) song.release();
     }
+   
+   public void pause(View button10){
+        if (song.isPlaying()){
+            song.pause();
+        }
+        else
+            song.start();
+    }
 }
