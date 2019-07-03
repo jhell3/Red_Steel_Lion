@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.content.Intent;
 
+/**
+ * used to select how long they will listen. 
+ */
 public class Music_Time_Selection extends AppCompatActivity {
     private TextView mTextMessage;
 
@@ -20,10 +23,13 @@ public class Music_Time_Selection extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_music__time__selection);
+        setContentView(R.layout.activity_music_time_selection);
         mTextMessage = findViewById(R.id.message);
     }
 
+    /**
+     * @param button5 used to set time to 5 min
+     */
     public void on5min(View button5){
         Intent currentIntent = getIntent();
         String musicSelect = currentIntent.getStringExtra("song");
@@ -32,6 +38,9 @@ public class Music_Time_Selection extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * @param button6 used to set time to 10 min
+     */
     public void on10min(View button6){
         Intent currentIntent = getIntent();
         String musicSelect = currentIntent.getStringExtra("song");
@@ -40,6 +49,9 @@ public class Music_Time_Selection extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * @param button7 used to set time to 20 min
+     */
     public void on20min(View button7){
         Intent currentIntent = getIntent();
         String musicSelect = currentIntent.getStringExtra("song");
