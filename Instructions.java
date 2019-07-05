@@ -36,7 +36,9 @@ public class Instructions extends AppCompatActivity {
             case "nature":
                 song = MediaPlayer.create(this,R.raw.nature);
                 song.start();
-                break;        }
+                break;    
+        }
+        song.setLooping(true);
     }
 
     /**
