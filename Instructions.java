@@ -44,7 +44,9 @@ public class Instructions extends AppCompatActivity {
      * @param button9 stop the music
      */
     public void onStop(View button9){
-        song.stop();
+         if (song.isPlaying()) {
+            song.stop();
+        }
     }
     @Override
     /**
