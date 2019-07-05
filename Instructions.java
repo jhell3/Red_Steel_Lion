@@ -48,6 +48,12 @@ public class Instructions extends AppCompatActivity {
     public void onStop(View button9){
          if (song.isPlaying()) {
             song.stop();
+            try {
+                song.prepare();
+              } catch (IOException e)
+              {
+                   //log.error(e);
+              }
         }
     }
     @Override
