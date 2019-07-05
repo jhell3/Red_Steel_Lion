@@ -65,7 +65,15 @@ public class Instructions extends AppCompatActivity {
         if (song.isPlaying()){
             song.pause();
         }
-        else
+    }
+    
+    /**
+     * palys song
+     * @param button
+     */
+    public void play(View button) {
+        if (!song.isPlaying()) {
             song.start();
+        }
     }
 }
