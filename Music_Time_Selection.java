@@ -1,29 +1,21 @@
 package com.example.bluebalm;
 
 import android.os.Bundle;
-//import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
-import android.support.annotation.NonNull;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.content.Intent;
 
-/**
- * used to select how long they will listen. 
- */
 public class Music_Time_Selection extends AppCompatActivity {
     private TextView mTextMessage;
 
-//    Intent intent = getIntent();
-//    String musicSelect = intent.getStringExtra("song");
-//    intent = new Intent(this, Instructions.class);
-//    intent.putExtra("song", "instrumental");
-
+    /**
+     * used to select how long they will listen.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_music_time_selection);
+        setContentView(R.layout.activity_music__time__selection);
         mTextMessage = findViewById(R.id.message);
     }
 
@@ -35,6 +27,7 @@ public class Music_Time_Selection extends AppCompatActivity {
         String musicSelect = currentIntent.getStringExtra("song");
         Intent intent = new Intent(this, Instructions.class);
         intent.putExtra("song", musicSelect);
+        intent.putExtra("time", "5");
         startActivity(intent);
     }
 
@@ -46,6 +39,7 @@ public class Music_Time_Selection extends AppCompatActivity {
         String musicSelect = currentIntent.getStringExtra("song");
         Intent intent = new Intent(this, Instructions.class);
         intent.putExtra("song", musicSelect);
+        intent.putExtra("time", "10");
         startActivity(intent);
     }
 
